@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gogame</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="uicons/css/uicons-regular-rounded.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container-fluid box-wrapper">
+            <div class="row align-items-center">
+                <div class="col-5 text-start">
+                    <span class="logo">
+                        <img src="img/logo.png" alt="Logo">
+                    </span>
+                </div>
+                <div class="col-7 text-end">
+                    <div class="header-menu">
+                        <div class="header-menu__item" id="search">
+                            <span class="fi fi-rr-search"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-search" style="display: none;">
+        <div class="container-fluid box-wrapper">
+            <div class="header-search__field">
+                <input class="form-control" type="text" placeholder="Search Game...">
+                <a href="#" class="field-icon"><span class="icon-search"></span></a>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="container-fluid box-wrapper">
+            <div class="table-responsive mb-3">
+                <ul class="nav nav-pills nav-pills-no-wrap" role="tablist">
+                    <li class="nav-item">
+                        <a data-bs-toggle="pill" class="nav-link button-genre media-box align-items-center active" href="#catAll">
+                            <div class="media-box__start"><span class="button-genre__icon fi fi-rr-trophy"></span></div>
+                            <div class="media-box__end">All Genre</div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a data-bs-toggle="pill" class="nav-link button-genre media-box align-items-center" href="#catCards">
+                            <div class="media-box__start"><span class="button-genre__icon fi fi-rr-playing-cards"></span></div>
+                            <div class="media-box__end">Cards</div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a data-bs-toggle="pill" class="nav-link button-genre media-box align-items-center" href="#catPlatformer">
+                            <div class="media-box__start"><span class="button-genre__icon fi fi-rr-joystick"></span></div>
+                            <div class="media-box__end">Platformer</div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a data-bs-toggle="pill" class="nav-link button-genre media-box align-items-center" href="#catShooting">
+                            <div class="media-box__start"><span class="button-genre__icon fi fi-rr-location-crosshairs"></span></div>
+                            <div class="media-box__end">Shooting</div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a data-bs-toggle="pill" class="nav-link button-genre media-box align-items-center" href="#catRacing">
+                            <div class="media-box__start"><span class="button-genre__icon fi-rr-biking"></span></div>
+                            <div class="media-box__end">Racing</div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a data-bs-toggle="pill" class="nav-link button-genre media-box align-items-center" href="#catPuzzle">
+                            <div class="media-box__start"><span class="button-genre__icon fi-rr-puzzle-alt"></span></div>
+                            <div class="media-box__end">Puzzle</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="tab-content">
+                <div class="tab-pane active show fade">
+                    <div class="row gx-3">
+                        <div class="col-6">
+                            <a href="game-detail.html" class="game-box">
+                                <img src="img/game-temple.jpg" alt="Game">
+                                <div class="game-box__info">
+                                    <div class="game-box__meta">
+                                        <h5 class="game-box__title">Temple Dash Mania</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6">
+                            <a href="game-detail.html" class="game-box">
+                                <img src="img/game-bird-bump.jpg" alt="Game">
+                                <div class="game-box__info">
+                                    <div class="game-box__meta">
+                                        <h5 class="game-box__title">Bird Bump</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6">
+                            <a href="game-detail.html" class="game-box">
+                                <img src="img/game-winding-road.jpg" alt="Game">
+                                <div class="game-box__info">
+                                    <div class="game-box__meta">
+                                        <h5 class="game-box__title">Winding Road</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6">
+                            <a href="game-detail.html" class="game-box">
+                                <img src="img/game-run.png" alt="Game">
+                                <div class="game-box__info">
+                                    <div class="game-box__meta">
+                                        <h5 class="game-box__title">Hardle Run</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6">
+                            <a href="game-detail.html" class="game-box">
+                                <img src="img/game-jetski.jpg" alt="Game">
+                                <div class="game-box__info">
+                                    <div class="game-box__meta">
+                                        <h5 class="game-box__title">Jet Ski Rush</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6">
+                            <a href="game-detail.html" class="game-box">
+                                <img src="img/game-late-to-work.jpg" alt="Game">
+                                <div class="game-box__info">
+                                    <div class="game-box__meta">
+                                        <h5 class="game-box__title">Late to Work</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="bottom-spacer"></div>
+    <div class="bottom-nav">
+        <div class="row gx-0 box-wrapper mx-auto container-fluid box-wrapper">
+            <div class="col">
+                <a href="index.html" class="nav-box">
+                    <div class="nav-box-ico">
+                        <span class="fi fi-rr-home"></span>
+                    </div>
+                    <p class="nav-box-title m-0">Home</p>
+                </a>
+            </div>
+            <div class="col active">
+                <a href="games.html" class="nav-box">
+                    <div class="nav-box-ico">
+                        <span class="fi fi-rr-game-board-alt"></span>
+                    </div>
+                    <p class="nav-box-title m-0">Games</p>
+                </a>
+            </div>
+            <div class="col">
+                <a href="favorite.html" class="nav-box">
+                    <div class="nav-box-ico">
+                        <span class="fi fi-rr-heart"></span>
+                    </div>
+                    <p class="nav-box-title m-0">Favorite</p>
+                </a>
+            </div>
+            <div class="col">
+                <a href="profile.html" class="nav-box">
+                    <div class="nav-box-ico">
+                        <span class="fi fi-rr-user"></span>
+                    </div>
+                    <p class="nav-box-title m-0">Me</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

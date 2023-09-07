@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gogame</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="uicons/css/uicons-regular-rounded.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container-fluid box-wrapper">
+            <div class="row align-items-center">
+                <div class="col-5 text-start">
+                    <span class="logo">
+                        <img src="img/logo.png" alt="Logo">
+                    </span>
+                </div>
+                <div class="col-7 text-end">
+                    <div class="header-menu">
+                        <div class="header-menu__item" id="search">
+                            <span class="fi fi-rr-search"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-search" style="display: none;">
+        <div class="container-fluid box-wrapper">
+            <div class="header-search__field">
+                <input class="form-control" type="text" placeholder="Search Game...">
+                <a href="#" class="field-icon"><span class="icon-search"></span></a>
+            </div>
+        </div>
+    </div>
+    <div class="favorite-empty">
+        <div class="favorite-empty__pict">
+            <img src="img/empty.png" alt="Empty">
+        </div>
+        <h4 class="favorite-empty__title">Your Box Is Empty</h4>
+        <a href="#" class="btn button-secondary text-capitalize">Explore Games</a>
+    </div>
+    <div class="bottom-spacer"></div>
+    <div class="bottom-nav">
+        <div class="row gx-0 box-wrapper mx-auto container-fluid box-wrapper">
+            <div class="col">
+                <a href="index.html" class="nav-box">
+                    <div class="nav-box-ico">
+                        <span class="fi fi-rr-home"></span>
+                    </div>
+                    <p class="nav-box-title m-0">Home</p>
+                </a>
+            </div>
+            <div class="col">
+                <a href="games.html" class="nav-box">
+                    <div class="nav-box-ico">
+                        <span class="fi fi-rr-game-board-alt"></span>
+                    </div>
+                    <p class="nav-box-title m-0">Games</p>
+                </a>
+            </div>
+            <div class="col active">
+                <a href="favorite.html" class="nav-box">
+                    <div class="nav-box-ico">
+                        <span class="fi fi-rr-heart"></span>
+                    </div>
+                    <p class="nav-box-title m-0">Favorite</p>
+                </a>
+            </div>
+            <div class="col">
+                <a href="profile.html" class="nav-box">
+                    <div class="nav-box-ico">
+                        <span class="fi fi-rr-user"></span>
+                    </div>
+                    <p class="nav-box-title m-0">Me</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        $('.action-delete').click(function() {
+            $('#modalDelete').modal('show')
+        })
+    </script>
+</body>
+</html>

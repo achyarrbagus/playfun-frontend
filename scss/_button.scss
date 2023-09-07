@@ -1,0 +1,99 @@
+.button-primary {
+    background-color: $color-primary;
+    color: $color-white;
+    border-radius: 50rem;
+    text-transform: uppercase;
+    &:hover,
+    &:active {
+        background-color: darken($color-primary, 10%) !important;
+        color: $color-white !important;
+        border-color: transparent !important;
+    }
+}
+
+.button-secondary {
+    background-color: $color-secondary;
+    color: $color-white;
+    border-radius: 50rem;
+    text-transform: uppercase;
+    &:hover,
+    &:active {
+        background-color: darken($color-secondary, 10%) !important;
+        color: $color-white !important;
+        border-color: transparent !important;
+    }
+}
+
+.button-green {
+    background-color: $color-green;
+    color: $color-white;
+    border-radius: 50rem;
+    text-transform: uppercase;
+    &:hover,
+    &:active {
+        background-color: darken($color-green, 10%) !important;
+        color: $color-white !important;
+        border-color: transparent !important;
+    }
+}
+
+.button-dark {
+    background-color: $color-grey-dark;
+    color: $color-white;
+    border-radius: 50rem;
+    text-transform: uppercase;
+    &:hover,
+    &:active {
+        background-color: darken($color-grey-dark, 10%) !important;
+        color: $color-white !important;
+        border-color: transparent !important;
+    }
+}
+
+.button-genre {
+    background-color: transparent !important;
+    color: $color-black !important;
+    border-radius: 50rem !important;
+    line-height: normal;
+    border: 1px solid $color-secondary;
+    &__icon {
+        background-color: $color-secondary;
+        color: $color-white;
+        width: 24px;
+        height: 24px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        font-size: 0.75rem;
+        vertical-align: middle;
+        margin-right: 0.35rem;
+    }
+    &.active {
+        background-color: $color-secondary !important;
+        border-color: $color-secondary;
+        color: $color-white !important;
+        .button-genre__icon {
+            background-color: $color-white;
+            color: $color-secondary;
+        }
+    }
+}
+
+.button-favorite {
+    width: 50px;
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: $color-smoke;
+    color: $color-primary;
+    font-size: 1.125rem;
+    border: 1px solid rgba($color-primary, 0.5);
+    &.active {
+        background-color: $color-bg-1;
+        border-color: $color-bg-1;
+        color: $color-primary;
+    }
+}

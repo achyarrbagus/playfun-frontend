@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Playfun</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="uicons/css/uicons-regular-rounded.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="container-fluid box-wrapper">
+        <div class="row align-items-center">
+          <div class="col-5 text-start">
+            <span class="logo">
+              <h5><i class="fi fi-rr-arrow-small-left"></i> Profile</h5>
+            </span>
+          </div>
+          <div class="col-7 text-end">
+            <div class="header-menu">
+              <div class="header-menu__item" id="search">
+                <span class="fi fi-rr-search"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-search" style="display: none">
+      <div class="container-fluid box-wrapper">
+        <div class="header-search__field">
+          <input class="form-control" type="text" placeholder="Search Game..." />
+          <a href="#" class="field-icon"><span class="icon-search"></span></a>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="container-fluid box-wrapper">
+        <div class="row gx-0 position-relative">
+          <div class="col-12 d-flex justify-content-center">
+            <div class="media-box" style="height: 100px">
+              <div class="text-center">
+                <div class="profile-card__pict mx-auto">
+                  <img src="img/avatar-sample-male.jpg" alt="Male" />
+                </div>
+                <h1 class="fs-6 mt-3">Name</h1>
+                <h1 class="fs-6">08xx xxxx xxxx</h1>
+                <div
+                  type="button"
+                  class="d-flex rounded-pill align-items-center justify-content-center"
+                  style="height: 20px; background-color: red; color: white"
+                >
+                  Subscribed
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <ul class="profile-menu">
+          <li class="profile-menu__list">
+            <a href="game-history.html">
+              <span class="menu-icon fi fi-rr-clock"></span>
+              Play History
+            </a>
+          </li>
+          <li class="profile-menu__list">
+            <a href="profile-edit.html">
+              <span class="menu-icon fi fi-rr-edit"></span>
+              Edit Profile
+            </a>
+          </li>
+          <li class="profile-menu__list">
+            <a href="general.html">
+              <span class="menu-icon fi fi-rr-comment-question"></span>
+              FAQ
+            </a>
+          </li>
+          <li class="profile-menu__list">
+            <a href="general.html">
+              <span class="menu-icon fi fi-rr-exclamation"></span>
+              Rules and Policies
+            </a>
+          </li>
+          <li class="profile-menu__list">
+            <a href="general.html">
+              <span class="menu-icon fi-rr-envelope"></span>
+              Contact Us
+            </a>
+          </li>
+          <li class="profile-menu__list">
+            <a href="#" class="action-logout">
+              <span class="menu-icon fi-rr-sign-out-alt"></span>
+              Logout
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="w-50 mx-auto text-center">
+        <a href="index.html" class="btn mt-2 rounded-pill" style="color: red; border: 1px solid red">UnSubscribe</a>
+      </div>
+    </div>
+    <div class="bottom-spacer"></div>
+    <div class="bottom-nav">
+      <div class="row gx-0 box-wrapper mx-auto container-fluid box-wrapper">
+        <div class="col">
+          <a href="index.html" class="nav-box">
+            <div class="nav-box-ico">
+              <span class="fi fi-rr-home"></span>
+            </div>
+            <p class="nav-box-title m-0"></p>
+          </a>
+        </div>
+        <div class="col">
+          <a href="browse-game.html" class="nav-box">
+            <div class="nav-box-ico">
+              <span class="fi fi-rr-game-board-alt"></span>
+            </div>
+            <p class="nav-box-title m-0"></p>
+          </a>
+        </div>
+        <div class="col">
+          <a href="favorite.html" class="nav-box">
+            <div class="nav-box-ico">
+              <span class="fi fi-rr-heart"></span>
+            </div>
+            <p class="nav-box-title m-0"></p>
+          </a>
+        </div>
+        <div class="col active">
+          <a href="profile.html" class="nav-box">
+            <div class="nav-box-ico">
+              <span class="fi fi-rr-user"></span>
+            </div>
+            <p class="nav-box-title m-0"></p>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" tabindex="-1" id="modalLogout">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">Are you sure you want to logout?</div>
+          <div class="modal-footer">
+            <button type="button" class="btn button-dark" data-bs-dismiss="modal">Cancel</button>
+            <a href="login.html" class="btn button-primary">Yes</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+      $(".action-logout").click(function () {
+        $("#modalLogout").modal("show");
+      });
+    </script>
+  </body>
+</html>
