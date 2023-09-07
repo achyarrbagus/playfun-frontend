@@ -12,7 +12,7 @@
   src: local("Mona Sans"), url("../font/Mona-Sans-Bold.woff2") format("woff");
   font-weight: Bold;
 }
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Urbanist&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&family=Urbanist&display=swap");
 
 .button-subscribe {
   background-color: #f08435;
@@ -131,11 +131,16 @@
 }
 
 body {
-  font-family: "Poppins,Mona Sans";
+  font-family: "Poppins";
   text-rendering: optimizeLegibility;
   font-size: 0.875rem;
   background-color: #ffffff;
   min-height: 100vh;
+}
+.font_monaSans {
+  font-family: "Mona Sans";
+  text-rendering: optimizeLegibility;
+  font-size: 0.875rem;
 }
 
 a {
@@ -402,6 +407,7 @@ a:hover {
 .game-box__title {
   font-size: 0.875rem;
   margin-bottom: 0.15rem;
+  font-family: "Mona sans";
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
